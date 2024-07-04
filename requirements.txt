@@ -4,3 +4,4 @@ matplotlib==3.9.0
 matplotlib-inline==0.1.7
 pillow==10.3.0
 selenium==4.21.0
+webdriver-manager

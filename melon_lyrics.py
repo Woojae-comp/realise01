@@ -18,10 +18,12 @@ chrome_options.add_argument('--disable-dev-shm-usage')
 chrome_options.add_argument('--disable-gpu')
 chrome_options.add_argument('--remote-debugging-port=9222')
 
+# 브라우저 드라이버 경로 설정 (온라인 환경에서는 명시적으로 설정)
+driver_path = '/usr/local/bin/chromedriver'  # 온라인 환경에 맞는 경로로 설정
 
 def scrape_lyrics(singer):
     # 드라이버 실행
-    driver = webdriver.Chrome(options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options, executable_path=driver_path)
     song_data = pd.DataFrame()
     
     try:

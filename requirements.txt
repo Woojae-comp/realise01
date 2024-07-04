@@ -1,5 +1,6 @@
-streamlit==1.15.0
-pandas==1.5.3
-Pillow==9.3.0
-selenium==4.7.2
-matplotlib==3.6.2
+pandas==2.2.2
+streamlit==1.35.0
+matplotlib==3.9.0
+matplotlib-inline==0.1.7
+pillow==10.3.0
+selenium==4.21.0
